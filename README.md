@@ -14,8 +14,8 @@
 查看生成的日志文件以获取详细的域名和节点状态信息。
 ## 示例
 sh
-go build -o monitor main.go
-./monitor
+编译：go build -o monitor main.go
+运行 ./monitor
 ## 代码结构说明
 executeKubectlGetNodes(file_currentTime string): 此函数负责执行 'kubectl get nodes' 命令将结果输出到日志文件；
 processDomain(domain, file_currentTime string): 此函数负责检查指定域名的 HTTP 状态，并将结果保存在日志文件中；
